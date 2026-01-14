@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+  font-family: "Outfit", sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+/* =========================
+   GLOBAL THEME TOKENS
+========================= */
+
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --card-soft: #f1f5f9;
+
+  --text: #0f172a;
+  --text-muted: #64748b;
+
+  --border: #e5e7eb;
+
+  --accent: #6366f1;
+}
+
+.dark {
+  --bg: #020617;
+  --card: #0f172a;
+  --card-soft: #020617;
+
+  --text: #e5e7eb;
+  --text-muted: #94a3b8;
+
+  --border: #1e293b;
+
+  --accent: #818cf8;
+}
+
+/* base apply */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
